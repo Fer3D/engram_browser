@@ -1,4 +1,5 @@
 # Engram Browser
+<img width="100%" alt="Engram Browser" src="https://github.com/user-attachments/assets/394c226c-05b3-4f07-b908-f23823293a91" />
 
 A local web app to browse, organize and edit everything Engram has stored.
 
