@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Engram Browser</title>
+<link rel="stylesheet" href="/styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+</head>
+<body>
+<div class="app">
+
+  <aside class="rail">
+    <div class="brand">
+      <span class="brand-mark">🧠</span>
+      <span class="brand-text">Engram Browser<small>browse and edit your memory</small></span>
+    </div>
+
+    <div id="health" class="health"></div>
+
+    <nav id="views" class="views" aria-label="Views"></nav>
+
+    <div class="rail-section-label">
+      <span>Projects</span>
+      <button id="project-search-toggle" class="icon-btn" title="Filter projects" aria-label="Filter projects">⌕</button>
+    </div>
+    <input id="project-filter" class="project-filter" type="search" placeholder="Filter projects…" hidden />
+    <div id="projects" class="projects"></div>
+
+    <div class="rail-foot">
+      <button id="reload" class="ghost-btn" title="Reload everything from Engram">↻ Reload</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="title-wrap">
+        <h1 id="view-title">Observations</h1>
+        <span id="view-count" class="pill"></span>
+      </div>
+      <div id="view-actions" class="actions"></div>
+    </header>
+
+    <div id="toolbar" class="toolbar"></div>
+
+    <div id="banner" class="banner" hidden></div>
+
+    <div id="content" class="content"></div>
+  </main>
+
+  <section id="drawer" class="drawer" hidden aria-label="Detail"></section>
+</div>
+
+<div id="modal" class="modal" hidden></div>
+<div id="toast" class="toast" hidden></div>
+
+<script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# Local ODD working log — intentionally not published.
+# It quotes personal context verbatim (the original request, real project names,
+# a real observation title, the store inventory) because that is what an ODD
+# feature document is for. It stays on this machine.
+odd/
